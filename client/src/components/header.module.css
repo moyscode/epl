@@ -1,0 +1,28 @@
+.header {
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 5;
+  padding: 0.5em 0;
+  background-color: hsl(var(--color-background));
+  font-family: var(--ff-name);
+  font-size: var(--fs-400);
+  font-weight: bold;
+}
+.nav {
+  margin: 0 2em;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  text-decoration: solid;
+}
+.link {
+  margin: 0 0.5em;
+  color: hsl(var(--font-color-category));
+  text-decoration: none;
+  font-family: var(--ff-serif);
+  font-size: var(--fs-200);
+  font-weight: bold;
+}

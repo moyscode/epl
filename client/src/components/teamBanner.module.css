@@ -1,0 +1,17 @@
+.container {
+  align-items: center;
+  cursor: pointer;
+  top: 0;
+  z-index: 2;
+  background-color: hsl(var(--color-background));
+}
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 3vmax;
+  height: 3vmax;
+}
+
+.name {
+  display: inline-block;
+}

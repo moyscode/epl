@@ -1,0 +1,6 @@
+.app {
+  height: 100vh;
+  overflow: auto;
+  background-color: hsl(var(--color-background));
+  position: relative;
+}
