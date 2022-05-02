@@ -8,7 +8,7 @@ export const getClubInfo = (req, res, next) => {
 
   const queries = [
     {
-      query: `select * from standings where team ='${team}' and goals_for = (select min(goals_for) from standings where team='${team}')`,
+      query: `SELECT * FROM standings WHERE team ='${team}' AND goals_for = (select min(goals_for) FROM standings WHERE team='${team}')`,
     },
     {
       query: `SELECT	count(DISTINCT season) FROM standings`,

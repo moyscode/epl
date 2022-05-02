@@ -2,6 +2,8 @@ import { Header } from "../components/Header";
 import { useLocation } from "react-router-dom";
 import { useState, useEffect, useCallback } from "react";
 import { BASE_URL } from "../CONSTANTS";
+import { TeamBanner } from "../components/TeamBanner";
+import styles from "./teamPage.module.css";
 
 const url = BASE_URL + "gi";
 
@@ -34,14 +36,14 @@ export const TeamPage = () => {
   }, [getTeam]);
 
   return (
-    <div className="team-page">
+    <div className={styles["team-page"]}>
       <Header />
-      <h1>{team}</h1>
+      <TeamBanner team={team} showName={true} />
       <h3>
         {team} has been part of {teamSeasons} out of total {totalSeasons} EPL
         seasons till date
       </h3>
-      <ul className="team-stats">
+      <ul className={styles["team-stats"]}>
         {minGoals.map((line: any) => (
           <li key={line.season}>
             {team} has scored {line.goals_for} in {line.season} season

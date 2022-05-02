@@ -1,0 +1,52 @@
+.content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+}
+
+.circle {
+  position: relative;
+  border-radius: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
+  /* background: linear-gradient(40deg, #ff0080, #ff8c00 70%); */
+  background: #ff8c00;
+  margin: auto;
+}
+.crescent {
+  position: absolute;
+  border-radius: 100%;
+  right: 0;
+  width: 1.15rem;
+  height: 1.15rem;
+  background: white;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.circle.dark {
+  /* background: linear-gradient(40deg, #8983f7, #a3dafb 70%); */
+  background: #8983f7;
+}
+
+.crescent.dark {
+  transform: scale(1);
+  background: hsl(var(--color-background));
+}
+
+@media (max-width: 768px) {
+  .circle {
+    width: 1.25em;
+    height: 1.25em;
+  }
+  .crescent {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+  .content {
+    transform: translateY(-5%);
+  }
+}

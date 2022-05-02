@@ -1,9 +1,15 @@
 .container {
+  margin: 0.25em;
   align-items: center;
   cursor: pointer;
   top: 0;
   z-index: 2;
   background-color: hsl(var(--color-background));
+  padding: 0.1em 0.25em;
+  border-radius: 0.5em;
+  box-shadow: 0.05rem 0.05rem 0.2rem rgb(0 0 0 / 50%);
+  font-family: var(--ff-serif);
+  font-size: var(--fs-200);
 }
 .logo {
   display: inline-block;
@@ -11,7 +17,15 @@
   width: 3vmax;
   height: 3vmax;
 }
+.container:hover {
+  outline: 0.15em solid hsl(240, 90%, 67%);
+}
 
-.name {
-  display: inline-block;
+.no-name {
+  border-radius: 0.25em;
+}
+
+.only-logo {
+  width: 5vmax;
+  height: 5vmax;
 }

@@ -7,10 +7,14 @@
   z-index: 5;
   padding: 0.5em 0;
   background-color: hsl(var(--color-background));
-  font-family: var(--ff-name);
-  font-size: var(--fs-400);
-  font-weight: bold;
+  border-radius: 0.5em 0.5em 0 0;
 }
+h3 {
+  font-family: var(--ff-name);
+  margin: 0 0.25em;
+  color: hsl(var(--font-color-primary));
+}
+
 .nav {
   margin: 0 2em;
   display: flex;
