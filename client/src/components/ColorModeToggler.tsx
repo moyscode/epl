@@ -1,10 +1,10 @@
-import styles from "./ColorToggler.module.css";
+import styles from "./ColorModeToggler.module.css";
 
 import { RootState } from "../redux/store";
 import { useSelector, useDispatch } from "react-redux";
 import { colorModeChange } from "../redux/colorModeSlice";
 
-export const ColorToggler = () => {
+export const ColorModeToggler = () => {
   const colorMode = useSelector(
     (state: RootState) => state.colorModeToggler.value
   );

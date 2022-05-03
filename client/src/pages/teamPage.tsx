@@ -2,7 +2,6 @@ import { Header } from "../components/Header";
 import { useLocation } from "react-router-dom";
 import { useState, useEffect, useCallback } from "react";
 import { BASE_URL } from "../CONSTANTS";
-import { TeamBanner } from "../components/TeamBanner";
 import styles from "./teamPage.module.css";
 
 const url = BASE_URL + "gi";
@@ -38,18 +37,27 @@ export const TeamPage = () => {
   return (
     <div className={styles["team-page"]}>
       <Header />
-      <TeamBanner team={team} showName={true} />
-      <h3>
-        {team} has been part of {teamSeasons} out of total {totalSeasons} EPL
-        seasons till date
-      </h3>
-      <ul className={styles["team-stats"]}>
-        {minGoals.map((line: any) => (
-          <li key={line.season}>
-            {team} has scored {line.goals_for} in {line.season} season
-          </li>
-        ))}
-      </ul>
+      <div className={styles["logo-container"]}>
+        <img
+          src={require(`../logos/${team}.svg`)}
+          alt="logo"
+          className={styles.logo}
+        />
+      </div>
+
+      <div className={styles["stats-container"]}>
+        <h3>
+          {team} has been part of {teamSeasons} out of total {totalSeasons} EPL
+          seasons till date
+        </h3>
+        <ul className={styles["team-stats"]}>
+          {minGoals.map((line: any) => (
+            <li key={line.season}>
+              {team} has scored {line.goals_for} in {line.season} season
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

@@ -1,3 +1,24 @@
-.team-stats {
-  border-radius: 00.25em;
+.team-page {
+  width: 100%;
+  position: relative;
+}
+
+.logo-container {
+  position: fixed;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+.logo {
+  width: 30vw;
+  height: 30vw;
+  transform: translate(50%);
+  inset: 0;
+}
+
+.stats-container {
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
 }

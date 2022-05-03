@@ -1,4 +1,4 @@
-import { ColorToggler } from "./ColorToggler";
+import { ColorModeToggler } from "./ColorModeToggler";
 import styles from "./header.module.css";
 import Link from "./Link";
 import { RootState } from "../redux/store";
@@ -15,8 +15,8 @@ export const Header = () => {
         colorMode === "dark" ? "theme-dark" : "theme-light"
       }`}
     >
-      <h3>Header</h3>
-      <ColorToggler />
+      <h3>EPL-stats</h3>
+
       <nav className={styles.nav}>
         <Link className={styles.link} to="/">
           Home
@@ -27,6 +27,7 @@ export const Header = () => {
         <Link className={styles.link} to="/contact">
           Contact
         </Link>
+        <ColorModeToggler />
       </nav>
     </div>
   );
