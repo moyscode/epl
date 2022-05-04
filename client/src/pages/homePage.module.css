@@ -4,6 +4,8 @@
   z-index: -1;
   flex-wrap: wrap;
   padding: 0.25rem;
+  margin: var(--margin);
+  background-color: hsl(var(--color-background));
 }
 
 @media only screen and (max-width: 900px) {
@@ -22,4 +24,35 @@
   .teams {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.name-button {
+  padding: 0rem 1rem 0rem;
+  border-radius: 0.25rem;
+  position: fixed; /*do not use ABSOLUTE, that will move the button on scroll*/
+  bottom: 20%;
+  right: 0%;
+  width: clamp(100px, 12vw, 200px);
+  border: none;
+  font-family: var(--ff-serif);
+  color: hsl(var(--color-primary));
+  font-size: var(--fs-200);
+  z-index: 4;
+  background-color: hsl(var(--font-color-category));
+
+  /*the below code is to set the color animations when button is clicked or mouse hover on it*/
+  background-image: linear-gradient(
+    hsl(var(--color-quantityChange-accent), 0.9),
+    hsl(var(--color-quantityChange-accent), 0.9)
+  );
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.5s, color 0.5s;
+  border: 2px solid hsl(var(--color-quantityChange-accent));
+}
+.name-button:hover,
+.name-button:active {
+  /*this code controls the animation*/
+  background-size: 100% 100%;
 }

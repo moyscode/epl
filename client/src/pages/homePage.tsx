@@ -32,8 +32,11 @@ export const HomePage = () => {
   const [teams, setTeams] = useState([]);
   const [team, setTeam] = useState("");
   const onBannerClick = () => setTeam(team);
+  const [showNames, setShowNames] = useState(false);
 
-  const showNames = false;
+  const showNameToggler = () => {
+    setShowNames((s) => !s);
+  };
 
   return (
     <div
@@ -41,8 +44,16 @@ export const HomePage = () => {
         colorMode === "dark" ? "theme-dark" : "theme-light"
       }`}
     >
+      <button
+        className={`${styles["name-button"]} ${
+          colorMode === "dark" ? "theme-dark" : "theme-light"
+        }`}
+        type="button"
+        onClick={showNameToggler}
+      >
+        {showNames ? "Hide Names" : "Show Names"}
+      </button>
       <Header />
-      <p>{team}</p>
       <div
         className={`${styles.teams} flex ${
           colorMode === "dark" ? "theme-dark" : "theme-light"

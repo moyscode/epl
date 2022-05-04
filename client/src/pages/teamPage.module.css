@@ -1,24 +1,30 @@
 .team-page {
-  width: 100%;
+  width: calc(100% - 12.5vw);
   position: relative;
+  padding: 0 0.5em;
+  background-color: hsl(var(--color-background));
+  margin: var(--margin);
 }
 
 .logo-container {
   position: fixed;
-  right: 1.5rem;
+  right: 2.5vmin;
   top: 50%;
   transform: translateY(-50%);
   overflow: hidden;
+  fill-opacity: 0;
 }
 
 .logo {
-  width: 30vw;
-  height: 30vw;
+  width: 25vw;
+  height: 25vw;
   transform: translate(50%);
-  inset: 0;
 }
 
 .stats-container {
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.1);
+  margin: var(--margin);
+  padding: 0.5em 0.5em;
+  background-color: hsl(var(--color-background));
+  color: hsl(var(--font-color-primary));
+  z-index: 3;
 }

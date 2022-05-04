@@ -15,11 +15,14 @@
   /* font-families */
   --ff-serif: "Roboto", sans-serif;
   --ff-name: "Cinzel Decorative", cursive;
+  --margin: 0 1rem 0;
+  --padding: 0 0.5rem 0;
 }
 
 .theme-light {
   /* colors */
   --color-background: 0, 0%, 100%; /*hex #FFFFFF*/
+  --color-outline: 220, 13%, 18%; /*hex 282C34*/
   --color-primary: 220, 20%, 97%; /*hex #F6F7F9*/
   --color-menuItem-accent: 18, 64%, 59%; /*hex #d97c54 */
   --color-quantityChange-accent: 212, 56%, 49%; /*hex 3778c3 */
@@ -27,11 +30,13 @@
   --font-color-primary: 188, 95%, 7%; /*hex #011e23 */
   --font-color-category: 220, 13%, 18%; /*hex 282C34*/
   --separation-line: 24, 95%, 39%; /* hex #c25105*/
+  --box-shadow: 0.05rem 0.05rem 0.2rem rgb(0 0 0 / 50%);
 }
 
 .theme-dark {
   /* colors */
   --color-background: 220, 13%, 18%; /*hex 282C34*/
+  --color-outline: 0, 0%, 100%; /*hex #FFFFFF*/
   --color-primary: 220, 13%, 28%; /*hex 3e4451*/
   --color-menuItem-accent: 152, 46%, 50%; /*hex 45ba83*/
   --color-quantityChange-accent: 18, 64%, 59%; /*hex #d97c54 */
@@ -39,4 +44,5 @@
   --font-color-primary: 0, 0%, 100%; /*hex FFFFFF */
   --font-color-category: 0, 0%, 100%; /*hex FFFFFF */
   --separation-line: 73, 92%, 34%; /* hex #84a607*/
+  --box-shadow: 0.05rem 0.05rem 0.2rem rgba(240, 236, 236, 0.815);
 }

@@ -5,9 +5,9 @@
   position: -webkit-sticky;
   top: 0;
   z-index: 5;
-  padding: 0.5em 0;
+  padding: 0.5em var(--padding);
+  margin: var(--margin);
   background-color: hsl(var(--color-background));
-  border-radius: 0.5em 0.5em 0 0;
 }
 h3 {
   font-family: var(--ff-name);
@@ -16,7 +16,7 @@ h3 {
 }
 
 .nav {
-  margin: 0 2em;
+  margin: 0 0.5em;
   display: flex;
   list-style-type: none;
   justify-content: space-between;

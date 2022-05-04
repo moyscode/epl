@@ -15,8 +15,9 @@ export const Header = () => {
         colorMode === "dark" ? "theme-dark" : "theme-light"
       }`}
     >
-      <h3>EPL-stats</h3>
-
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <h3>EPL-stats</h3>
+      </Link>
       <nav className={styles.nav}>
         <Link className={styles.link} to="/">
           Home
