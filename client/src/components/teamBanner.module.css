@@ -7,18 +7,23 @@
   background-color: hsl(var(--color-background));
   padding: 0.1em 0.25em;
   border-radius: 0.5em;
-  box-shadow: var(--box-shadow);
   font-family: var(--ff-serif);
   font-size: var(--fs-200);
+  flex-direction: column;
+  /* transform: rotate(45deg); */
 }
 .logo {
   display: inline-block;
   vertical-align: middle;
   width: 5vmax;
   height: 5vmax;
+  /* transform: rotate(-45deg); */
+  filter: drop-shadow(var(--drop-shadow));
 }
-.container:hover {
-  outline: 0.15em solid hsl(240, 90%, 67%);
+.logo:hover {
+  scale: 1.25;
+  filter: drop-shadow(0 0 0);
+  /* outline: 0.15em solid hsl(240, 90%, 67%); */
 }
 
 .no-name {
@@ -28,4 +33,17 @@
 .only-logo {
   width: 6vmax;
   height: 6vmax;
+}
+
+.name {
+  display: block;
+  box-shadow: var(--box-shadow);
+  padding: 0 0.5em 0;
+  border-radius: 0.5em;
+  transform: translateY(-0.5em);
+}
+
+.container:hover .logo {
+  scale: 1.25;
+  filter: drop-shadow(0 0 0);
 }

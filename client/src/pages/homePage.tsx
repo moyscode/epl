@@ -4,7 +4,8 @@ import { BASE_URL } from "../CONSTANTS";
 import { TeamBanner } from "../components/TeamBanner";
 import styles from "./homePage.module.css";
 import { RootState } from "../redux/store";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { showNameStateChange } from "../redux/showNameSlice";
 
 const url = BASE_URL + "allTeams";
 
@@ -12,6 +13,11 @@ export const HomePage = () => {
   const colorMode = useSelector(
     (state: RootState) => state.colorModeToggler.value
   );
+
+  const showNames = useSelector(
+    (state: RootState) => state.showNameToggler.value
+  );
+  const dispatch = useDispatch();
 
   const getAllTeams = useCallback(async (url: string) => {
     const response = await fetch(url);
@@ -32,11 +38,6 @@ export const HomePage = () => {
   const [teams, setTeams] = useState([]);
   const [team, setTeam] = useState("");
   const onBannerClick = () => setTeam(team);
-  const [showNames, setShowNames] = useState(false);
-
-  const showNameToggler = () => {
-    setShowNames((s) => !s);
-  };
 
   return (
     <div
@@ -49,7 +50,7 @@ export const HomePage = () => {
           colorMode === "dark" ? "theme-dark" : "theme-light"
         }`}
         type="button"
-        onClick={showNameToggler}
+        onClick={() => dispatch(showNameStateChange())}
       >
         {showNames ? "Hide Names" : "Show Names"}
       </button>

@@ -31,6 +31,7 @@
   --font-color-category: 220, 13%, 18%; /*hex 282C34*/
   --separation-line: 24, 95%, 39%; /* hex #c25105*/
   --box-shadow: 0.05rem 0.05rem 0.2rem rgb(0 0 0 / 50%);
+  --drop-shadow: 0.25rem 0.25rem 0.125rem hsl(0, 0%, 35%);
 }
 
 .theme-dark {
@@ -45,4 +46,5 @@
   --font-color-category: 0, 0%, 100%; /*hex FFFFFF */
   --separation-line: 73, 92%, 34%; /* hex #84a607*/
   --box-shadow: 0.05rem 0.05rem 0.2rem rgba(240, 236, 236, 0.815);
+  --drop-shadow: 0.25rem 0.25rem 0.125rem hsl(0, 1%, 64%);
 }

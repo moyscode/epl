@@ -34,7 +34,7 @@ export const TeamBanner = ({
           className={`${styles.logo} ${showName ? "" : styles["only-logo"]}`}
         />
       </div>
-      {showName ? team : ""}
+      <div className={styles.name}> {showName ? team : ""}</div>
     </div>
   );
 };

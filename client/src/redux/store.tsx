@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import colorModeReducer from "./colorModeSlice";
+import showNameReducer from "./showNameSlice";
 
 export const store = configureStore({
   reducer: {
     colorModeToggler: colorModeReducer,
+    showNameToggler: showNameReducer,
   },
 });
 
