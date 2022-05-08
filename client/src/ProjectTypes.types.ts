@@ -5,3 +5,11 @@ export type TeamBannerProps = {
   onBannerClick?: () => void;
   showName: boolean;
 };
+
+export type StatBannerProps = {
+  category: string;
+  teamValue: number;
+  recordValue: number;
+  recordTeam: string;
+  season: string;
+};

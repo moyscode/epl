@@ -35,24 +35,10 @@
   width: clamp(100px, 12vw, 200px);
   border: none;
   font-family: var(--ff-serif);
-  color: hsl(var(--color-primary));
+  color: hsl(var(--font-color-primary));
   font-size: var(--fs-200);
   z-index: 4;
-  background-color: hsl(var(--font-color-category));
-
-  /*the below code is to set the color animations when button is clicked or mouse hover on it*/
-  background-image: linear-gradient(
-    hsl(var(--color-quantityChange-accent), 0.9),
-    hsl(var(--color-quantityChange-accent), 0.9)
-  );
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
-  transition: background-size 0.5s, color 0.5s;
-  border: 2px solid hsl(var(--color-quantityChange-accent));
-}
-.name-button:hover,
-.name-button:active {
-  /*this code controls the animation*/
-  background-size: 100% 100%;
+  background-color: hsl(var(--color-background));
+  border: 0.25em solid hsl(var(--color-accent));
+  cursor: pointer;
 }

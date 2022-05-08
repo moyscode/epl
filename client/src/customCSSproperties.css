@@ -15,36 +15,66 @@
   /* font-families */
   --ff-serif: "Roboto", sans-serif;
   --ff-name: "Cinzel Decorative", cursive;
+  --ff-mono: "Cutive Mono", monospace;
+  --ff-stylish: "Fraunces", serif;
   --margin: 0 1rem 0;
   --padding: 0 0.5rem 0;
+
+  /*stat banner variables */
+  --border-radius: 0.5em;
 }
 
 .theme-light {
   /* colors */
-  --color-background: 0, 0%, 100%; /*hex #FFFFFF*/
-  --color-outline: 220, 13%, 18%; /*hex 282C34*/
-  --color-primary: 220, 20%, 97%; /*hex #F6F7F9*/
-  --color-menuItem-accent: 18, 64%, 59%; /*hex #d97c54 */
-  --color-quantityChange-accent: 212, 56%, 49%; /*hex 3778c3 */
+  --color-background: 0, 0%, 100%; /*hex #FFFFFF */
+  --color-primary: 270, 33%, 99%; /*hex #fcfbfd*/
   --color-grey: 0, 0%, 77%; /*hex C4C4C4 */
-  --font-color-primary: 188, 95%, 7%; /*hex #011e23 */
-  --font-color-category: 220, 13%, 18%; /*hex 282C34*/
-  --separation-line: 24, 95%, 39%; /* hex #c25105*/
+  --font-color-primary: 249, 8%, 16%; /*hex #27262d */
+  --contrast: 193, 21%, 92%; /*hex #e5ecee */
   --box-shadow: 0.05rem 0.05rem 0.2rem rgb(0 0 0 / 50%);
   --drop-shadow: 0.25rem 0.25rem 0.125rem hsl(0, 0%, 35%);
+
+  --color-accent: 260, 21%, 50%; /*hex #aca1c2*/
 }
 
 .theme-dark {
   /* colors */
-  --color-background: 220, 13%, 18%; /*hex 282C34*/
-  --color-outline: 0, 0%, 100%; /*hex #FFFFFF*/
-  --color-primary: 220, 13%, 28%; /*hex 3e4451*/
-  --color-menuItem-accent: 152, 46%, 50%; /*hex 45ba83*/
-  --color-quantityChange-accent: 18, 64%, 59%; /*hex #d97c54 */
+  --color-background: 220, 13%, 18%; /*hex 282C34 */
+  --color-primary: 244, 39%, 17%; /*hex #1d1b3d*/
   --color-grey: 0, 0%, 77%; /*hex C4C4C4 */
-  --font-color-primary: 0, 0%, 100%; /*hex FFFFFF */
-  --font-color-category: 0, 0%, 100%; /*hex FFFFFF */
-  --separation-line: 73, 92%, 34%; /* hex #84a607*/
+  --font-color-primary: 300, 100%, 100%; /*hex #fffeff */
+  --contrast: 238, 22%, 26%; /*hex #343551 */
   --box-shadow: 0.05rem 0.05rem 0.2rem rgba(240, 236, 236, 0.815);
   --drop-shadow: 0.25rem 0.25rem 0.125rem hsl(0, 1%, 64%);
+
+  --color-accent: 221, 13%, 42%; /*hex #5d6679*/
 }
+
+/* .theme-light { */
+
+/* --color-background: 0, 0%, 100%; hex #FFFFFF */
+/* --color-outline: 220, 13%, 18%; hex 282C34 */
+/* --color-primary: 220, 20%, 97%; hex #F6F7F9/ */
+/* --color-menuItem-accent: 18, 64%, 59%; hex #d97c54 */
+/* --color-quantityChange-accent: 212, 56%, 49%; hex 3778c3 */
+/* --color-grey: 0, 0%, 77%; hex C4C4C4 */
+/* --font-color-primary: 188, 95%, 7%; hex #011e23 */
+/* --font-color-category: 220, 13%, 18%; hex 282C34 */
+/* --separation-line: 24, 95%, 39%; hex #c25105 */
+/* --box-shadow: 0.05rem 0.05rem 0.2rem rgb(0 0 0 / 50%); */
+/* --drop-shadow: 0.25rem 0.25rem 0.125rem hsl(0, 0%, 35%); */
+/* } */
+
+/* .theme-dark {   */
+/* --color-background: 220, 13%, 18%; hex 282C34 */
+/* --color-outline: 0, 0%, 100%; hex #FFFFFF */
+/* --color-primary: 220, 13%, 28%; hex 3e4451 */
+/* --color-menuItem-accent: 152, 46%, 50%; hex 45ba83 */
+/* --color-quantityChange-accent: 18, 64%, 59%; hex #d97c54 */
+/* --color-grey: 0, 0%, 77%; hex C4C4C4 */
+/* --font-color-primary: 0, 0%, 100%; hex FFFFFF */
+/* --font-color-category: 0, 0%, 100%; hex FFFFFF */
+/* --separation-line: 73, 92%, 34%; hex #84a607 */
+/* --box-shadow: 0.05rem 0.05rem 0.2rem rgba(240, 236, 236, 0.815); */
+/* --drop-shadow: 0.25rem 0.25rem 0.125rem hsl(0, 1%, 64%); */
+/* } */

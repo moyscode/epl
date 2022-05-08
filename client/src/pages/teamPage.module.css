@@ -27,4 +27,7 @@
   background-color: hsl(var(--color-background));
   color: hsl(var(--font-color-primary));
   z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
 }

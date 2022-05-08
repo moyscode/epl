@@ -1,0 +1,86 @@
+.container {
+  flex-direction: column;
+  width: clamp(100px, 25vw, 15rem);
+  height: clamp(100px, 25vh, 15rem);
+  gap: 0;
+  position: relative;
+  --border-thickness: 2px;
+  filter: drop-shadow(1px 1px 1px #676768);
+  z-index: 2;
+}
+
+.category {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  text-align: center;
+  background-color: hsl(var(--color-background));
+  width: 50%;
+  height: 40%;
+  font-family: var(--ff-serif);
+  border: var(--border-thickness) solid hsl(var(--color-accent));
+}
+
+.stats {
+  display: grid;
+  width: 100%;
+  height: 80%;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  position: absolute;
+  transform: translateY(20%);
+}
+
+.team-stat {
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+  border-left: var(--border-thickness) solid hsl(var(--color-accent));
+  border-top: var(--border-thickness) solid hsl(var(--color-accent));
+  border-right: var(--border-thickness) solid hsl(var(--color-accent));
+  border-radius: var(--border-radius) 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ff-stylish);
+  font-size: var(--fs-900);
+  background-color: hsl(var(--color-background));
+}
+.record {
+  grid-column: 4 / 5;
+  grid-row: 1/2;
+  border-right: var(--border-thickness) solid hsl(var(--color-accent));
+  border-top: var(--border-thickness) solid hsl(var(--color-accent));
+  border-bottom: var(--border-thickness) dashed hsl(var(--color-accent));
+  border-radius: 0 var(--border-radius) 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ff-stylish);
+  font-size: var(--fs-500);
+  background-color: hsl(var(--color-background));
+}
+.record-holder {
+  grid-column: 4 / 5;
+  grid-row: 2/3;
+  border-right: var(--border-thickness) solid hsl(var(--color-accent));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--color-background));
+}
+
+.season {
+  grid-column: 1 / 5;
+  grid-row: 3/4;
+  border: var(--border-thickness) solid hsl(var(--color-accent));
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ff-mono);
+  font-size: var(--fs-500);
+  background-color: hsl(var(--color-background));
+}
+
+.logo {
+  width: 4vmax;
+  height: 4vmax;
+}
