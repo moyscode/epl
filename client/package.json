@@ -47,5 +47,6 @@
   },
   "devDependencies": {
     "@types/d3": "^7.1.0"
-  }
+  },
+  "proxy": "http://localhost:8080"
 }

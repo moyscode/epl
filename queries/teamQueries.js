@@ -1,7 +1,9 @@
 import pgPromise from "pg-promise";
 
+import { dbConnection } from "../db.js";
+
 const pgp = pgPromise({});
-const db = pgp("postgres://postgres:learn@sql@localhost:5432/EPL");
+const db = pgp(dbConnection);
 
 export const getClubInfo = (req, res, next) => {
   const { team } = req.body;
