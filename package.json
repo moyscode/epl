@@ -16,7 +16,7 @@
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "keywords": [],
-  "author": "",
+  "author": "moys",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
