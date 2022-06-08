@@ -1,6 +1,11 @@
 import express from "express";
 import cors from "cors";
 import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 import { router as dbRouter } from "./routes/dbRoutes.js";
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
@@ -23,9 +28,9 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // simple route
-// app.get("/", (req, res) => {
-//   res.json({ message: "Welcome to mohan's application." });
-// });
+app.get("/", (req, res) => {
+  res.json({ message: "Welcome to mohan's application." });
+});
 
 app.use("/api", dbRouter);
 
