@@ -11,6 +11,7 @@ const app = express();
 const corsOptions = {
   origin: "http://localhost:3000",
 };
+
 app.use(cors(corsOptions));
 // parse requests of content-type - application/json
 app.use(express.json());
@@ -22,9 +23,9 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // simple route
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to mohan's application." });
-});
+// app.get("/", (req, res) => {
+//   res.json({ message: "Welcome to mohan's application." });
+// });
 
 app.use("/api", dbRouter);
 
