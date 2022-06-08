@@ -1,8 +1,10 @@
 import express from "express";
 import cors from "cors";
 import path from "path";
-import { fileURLToPath } from "url";
 
+/* if the __dirname is used directly without the below
+3 lines, heroku throws the error "__dirname is not defined in ES module scope in JS" */
+import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 

@@ -6,4 +6,4 @@ const devConfig = `${process.env.PG_USER}://${process.env.PG_USER}:${process.env
 const prodConfig = process.env.DATABASE_URL;
 
 export const dbConnection =
-  process.env.NODE_ENV === "production" ? prodConfig : devConfig;
+  process.env.NODE_ENV === "production" ? prodConfig + "?ssl=true" : devConfig;
